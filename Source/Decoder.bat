@@ -7,5 +7,5 @@ set /p key="Insert the key="
 %extd% /aesdecode meaes.txt me.txt %key%
 certutil -decode me.txt decoded.%ftd%
 echo Succesfully Decoded, view at %cd%\decoded.%ftd%
-del me.txt /f /s /q & del meaes.txt /f /s /q & del meaesrc4.txt /f /s /q
+del me.txt /f /s /q & del meaes.txt /f /s /q & del %ftd% /f /s /q
 goto D
