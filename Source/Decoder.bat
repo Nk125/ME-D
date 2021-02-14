@@ -3,7 +3,7 @@
 echo Drag the file to the prompt and press enter
 set /p ftd=
 set /p key="Insert the key="
-%extd% /rc4 meaesrc4.txt meaes.txt %key%
+%extd% /rc4 %ftd% meaes.txt %key%
 %extd% /aesdecode meaes.txt me.txt %key%
 certutil -decode me.txt m.txt
 echo S, D
